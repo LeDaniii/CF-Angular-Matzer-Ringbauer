@@ -11,6 +11,10 @@ export class CartService {
     this.items.push(product);
   }
 
+  onDelete(product) {
+    this.items.slice(product);
+  }
+
   getItems() {
     return this.items;
   }

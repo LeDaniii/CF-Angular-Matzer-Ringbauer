@@ -29,4 +29,8 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
   }
+
+  onDelete(product){
+    this.items = this.cartService.onDelete(product);
+  }
 }
